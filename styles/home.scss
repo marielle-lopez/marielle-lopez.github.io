@@ -1,0 +1,50 @@
+@use "./partials/variables/palette.scss";
+@use "./partials/mixins/layout.scss";
+
+* {
+  font-family: "Azeret Mono", monospace;
+  color: palette.$primary-text-color;
+}
+
+body {
+  @include layout.body;
+}
+
+main {
+  @include layout.main;
+
+  .navbar {
+    @include layout.navbar;
+  }
+}
+
+header {
+  @include layout.header;
+}
+
+footer {
+  @include layout.footer;
+}
+
+.memoji {
+  height: 500px;
+  margin-right: 60px;
+}
+
+.introduction {
+  &__greeting {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 70px;
+    margin: 10px 0 30px 0;
+  }
+
+  &__role {
+    margin: 0;
+    font-weight: 200;
+  }
+}
