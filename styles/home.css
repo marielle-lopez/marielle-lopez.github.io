@@ -1,6 +1,7 @@
 * {
   font-family: "Azeret Mono", monospace;
   color: #1e1e1e;
+  margin: 0;
 }
 
 body {
@@ -42,11 +43,12 @@ main .navbar__item a:hover {
 
 header {
   text-align: center;
+  margin-top: 30px;
 }
 header .logo {
   font-size: 50px;
   font-weight: 500;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 header .breadcrumb {
   font-size: small;
