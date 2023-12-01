@@ -1,0 +1,76 @@
+* {
+  font-family: "Azeret Mono", monospace;
+  color: #1e1e1e;
+}
+
+body {
+  background-image: url("../../../images/gradient.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .navbar {
+  border: 1px solid #1e1e1e;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  margin-right: 80px;
+}
+main .navbar__list {
+  text-align: right;
+  margin-right: 15px;
+}
+main .navbar__item {
+  list-style-type: none;
+  padding: 13px;
+  font-weight: 500;
+}
+
+header {
+  text-align: center;
+}
+header .logo {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+header .breadcrumb {
+  font-size: small;
+  font-weight: 400;
+  color: white;
+}
+
+footer .footer__copyright {
+  text-align: center;
+  font-weight: 200;
+  font-size: 12px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.memoji {
+  height: 500px;
+  margin-right: 60px;
+}
+
+.introduction__greeting {
+  font-size: 24px;
+  margin: 0;
+}
+.introduction__name {
+  font-weight: 700;
+  font-size: 70px;
+  margin: 10px 0 30px 0;
+}
+.introduction__role {
+  margin: 0;
+  font-weight: 200;
+}

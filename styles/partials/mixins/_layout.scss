@@ -1,0 +1,63 @@
+@use "../variables/palette.scss";
+
+@mixin body {
+  background-image: url("../../../images/gradient.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin header {
+  text-align: center;
+
+  .logo {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  .breadcrumb {
+    font-size: small;
+    font-weight: 400;
+    color: white;
+  }
+}
+
+@mixin navbar {
+  border: 1px solid palette.$primary-text-color;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  margin-right: 80px;
+
+  &__list {
+    text-align: right;
+    margin-right: 15px;
+  }
+
+  &__item {
+    list-style-type: none;
+    padding: 13px;
+    font-weight: 500;
+  }
+}
+
+@mixin footer {
+  .footer {
+    &__copyright {
+      text-align: center;
+      font-weight: 200;
+      font-size: 12px;
+      margin-bottom: 30px;
+      color: white;
+    }
+  }
+}
