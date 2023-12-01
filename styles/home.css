@@ -33,6 +33,12 @@ main .navbar__item {
   padding: 13px;
   font-weight: 500;
 }
+main .navbar__item a {
+  text-decoration: none;
+}
+main .navbar__item a:hover {
+  background-color: white;
+}
 
 header {
   text-align: center;

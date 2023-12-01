@@ -47,6 +47,14 @@
     list-style-type: none;
     padding: 13px;
     font-weight: 500;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: white;
+    }
   }
 }
 
