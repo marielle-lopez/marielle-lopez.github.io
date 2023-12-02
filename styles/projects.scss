@@ -35,9 +35,12 @@ footer {
   border: 1px solid palette.$primary-text-color;
   border-radius: 20px;
   display: flex;
+  margin-bottom: 30px;
 
   &__image {
     border-radius: 20px 0 0 20px;
+    width: 300px;
+    object-fit: cover;
   }
 
   &__information {
