@@ -16,7 +16,8 @@ body {
 main {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 10vw;
 }
 main .navbar {
   border: 1px solid #1e1e1e;
