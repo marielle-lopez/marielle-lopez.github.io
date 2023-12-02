@@ -1,5 +1,5 @@
-@use "./partials/variables/palette.scss";
-@use "./partials/mixins/layout.scss";
+@use "..partials/variables/palette.scss";
+@use "../partials/mixins/layout.scss";
 
 * {
   font-family: "Azeret Mono", monospace;

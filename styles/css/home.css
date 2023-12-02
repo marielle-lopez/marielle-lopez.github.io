@@ -7,7 +7,7 @@
 body {
   background-image: url("../../../images/gradient.jpg");
   background-size: cover;
-  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,7 +15,7 @@ body {
 
 main {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 0 10vw;
 }
@@ -45,6 +45,7 @@ main .navbar__item a:hover {
 header {
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 200px;
 }
 header .logo {
   font-size: 50px;
@@ -65,31 +66,21 @@ footer .footer__copyright {
   color: white;
 }
 
-.page-heading {
-  font-size: 25px;
-  margin-bottom: 30px;
+.memoji {
+  height: 500px;
+  margin-right: 60px;
 }
 
-.skills {
-  list-style-type: none;
-  display: flex;
-  flex-flow: row wrap;
-  row-gap: 15px;
-  column-gap: 50px;
-  padding-left: 0;
-  margin-bottom: 30px;
+.introduction__greeting {
+  font-size: 24px;
+  margin: 0;
 }
-.skills__item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.introduction__name {
+  font-weight: 700;
+  font-size: 70px;
+  margin: 10px 0 30px 0;
 }
-.skills__item__logo {
-  height: 50px;
-  width: 50px;
-}
-
-.comment {
-  font-size: 14px;
-  text-align: right;
+.introduction__role {
+  margin: 0;
+  font-weight: 200;
 }
