@@ -65,6 +65,11 @@ footer .footer__copyright {
   color: white;
 }
 
+.page-heading {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
 .skills {
   list-style-type: none;
   display: flex;
@@ -72,6 +77,7 @@ footer .footer__copyright {
   row-gap: 15px;
   column-gap: 50px;
   padding-left: 0;
+  margin-bottom: 30px;
 }
 .skills__item {
   display: flex;
@@ -81,4 +87,9 @@ footer .footer__copyright {
 .skills__item__logo {
   height: 50px;
   width: 50px;
+}
+
+.comment {
+  font-size: 14px;
+  text-align: right;
 }

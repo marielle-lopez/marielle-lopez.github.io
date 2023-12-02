@@ -27,6 +27,10 @@ footer {
   @include layout.footer;
 }
 
+.page-heading {
+  @include layout.page-heading;
+}
+
 .skills {
   list-style-type: none;
   display: flex;
@@ -34,6 +38,7 @@ footer {
   row-gap: 15px;
   column-gap: 50px;
   padding-left: 0;
+  margin-bottom: 30px;
 
   &__item {
     display: flex;
@@ -45,4 +50,9 @@ footer {
       width: 50px;
     }
   }
+}
+
+.comment {
+  font-size: 14px;
+  text-align: right;
 }
