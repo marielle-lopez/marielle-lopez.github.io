@@ -1,1 +1,80 @@
+* {
+  font-family: "Azeret Mono", monospace;
+  color: #1e1e1e;
+  margin: 0;
+}
 
+body {
+  background-image: url("../../../images/gradient.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10vw;
+}
+main .navbar {
+  border: 1px solid #1e1e1e;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  margin-right: 80px;
+}
+main .navbar__list {
+  text-align: right;
+  margin-right: 15px;
+}
+main .navbar__item {
+  list-style-type: none;
+  padding: 13px;
+  font-weight: 500;
+}
+main .navbar__item a {
+  text-decoration: none;
+}
+main .navbar__item a:hover {
+  background-color: white;
+}
+
+header {
+  text-align: center;
+  margin-top: 30px;
+}
+header .logo {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+header .breadcrumb {
+  font-size: small;
+  font-weight: 400;
+  color: white;
+}
+
+footer .footer__copyright {
+  text-align: center;
+  font-weight: 200;
+  font-size: 12px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.dance-image {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-right: 60px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

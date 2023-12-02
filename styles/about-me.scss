@@ -1,0 +1,42 @@
+@use "./partials/variables/palette.scss";
+@use "./partials/mixins/layout.scss";
+
+* {
+  font-family: "Azeret Mono", monospace;
+  color: palette.$primary-text-color;
+  margin: 0;
+}
+
+body {
+  @include layout.body;
+}
+
+main {
+  @include layout.main;
+
+  .navbar {
+    @include layout.navbar;
+  }
+}
+
+header {
+  @include layout.header;
+}
+
+footer {
+  @include layout.footer;
+}
+
+.dance-image {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-right: 60px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
