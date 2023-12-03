@@ -7,6 +7,7 @@
 body {
   background-image: url("../../../images/gradient.jpg");
   background-size: cover;
+  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -15,7 +16,7 @@ body {
 
 main {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   padding: 0 10vw;
 }
@@ -45,7 +46,6 @@ main .navbar__item a:hover {
 header {
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 200px;
 }
 header .logo {
   font-size: 50px;
@@ -66,36 +66,16 @@ footer .footer__copyright {
   color: white;
 }
 
-.page-heading {
-  font-size: 25px;
-  margin-bottom: 30px;
+.dance-image {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-right: 60px;
 }
 
-.card {
-  border: 1px solid #1e1e1e;
-  border-radius: 20px;
+.text {
   display: flex;
-  margin-bottom: 30px;
-}
-.card__image {
-  border-radius: 20px 0 0 20px;
-  width: 300px;
-  object-fit: cover;
-}
-.card__information {
-  padding: 20px;
-}
-.card__information__title {
-  margin-bottom: 10px;
-  font-weight: 800;
-  font-size: 20px;
-}
-.card__information__subtitle__type {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-.card__information__subtitle__purpose {
-  font-size: 14px;
-  font-style: italic;
-  margin-bottom: 20px;
+  flex-direction: column;
+  gap: 20px;
 }
