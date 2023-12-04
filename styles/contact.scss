@@ -1,0 +1,52 @@
+@use "./partials/variables/palette.scss";
+@use "./partials/mixins/layout.scss";
+
+* {
+  font-family: "Azeret Mono", monospace;
+  color: palette.$primary-text-color;
+  margin: 0;
+}
+
+body {
+  @include layout.body;
+}
+
+main {
+  @include layout.main;
+
+  .navbar {
+    @include layout.navbar;
+  }
+}
+
+header {
+  @include layout.header;
+}
+
+footer {
+  @include layout.footer;
+}
+
+.memoji {
+  height: 500px;
+}
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__title {
+    @include layout.page-heading;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      height: 35px;
+      margin-right: 10px;
+    }
+  }
+}
