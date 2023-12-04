@@ -19,6 +19,10 @@ main {
   }
 }
 
+.container {
+  @include layout.container;
+}
+
 header {
   @include layout.header;
 }
@@ -29,6 +33,7 @@ footer {
 
 .memoji {
   height: 500px;
+  margin-right: 60px;
 }
 
 .contact-information {
