@@ -6,8 +6,8 @@
 
 body {
   background-image: url("../../../images/gradient.jpg");
-  background-size: cover;
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,7 +15,7 @@ body {
 
 main {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 0 10vw;
 }
@@ -45,6 +45,8 @@ main .navbar__item a:hover {
 header {
   text-align: center;
   margin-top: 30px;
+  height: 10vh;
+  margin-bottom: 10vh;
 }
 header .logo {
   font-size: 50px;
@@ -57,6 +59,10 @@ header .breadcrumb {
   color: white;
 }
 
+footer {
+  height: 10vh;
+  margin-top: 10vh;
+}
 footer .footer__copyright {
   text-align: center;
   font-weight: 200;

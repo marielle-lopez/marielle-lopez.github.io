@@ -6,6 +6,7 @@
 
 body {
   background-image: url("../../../images/gradient.jpg");
+  background-size: cover;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -15,7 +16,7 @@ body {
 
 main {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   padding: 0 10vw;
 }
@@ -45,8 +46,6 @@ main .navbar__item a:hover {
 header {
   text-align: center;
   margin-top: 30px;
-  height: 10vh;
-  margin-bottom: 10vh;
 }
 header .logo {
   font-size: 50px;
@@ -59,10 +58,6 @@ header .breadcrumb {
   color: white;
 }
 
-footer {
-  height: 10vh;
-  margin-top: 10vh;
-}
 footer .footer__copyright {
   text-align: center;
   font-weight: 200;
@@ -71,16 +66,31 @@ footer .footer__copyright {
   color: white;
 }
 
-.dance-image {
-  height: 350px;
-  width: 350px;
-  object-fit: cover;
-  border-radius: 100%;
-  margin-right: 60px;
+.page-heading {
+  font-size: 25px;
+  margin-bottom: 30px;
 }
 
-.text {
+.skills {
+  list-style-type: none;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-flow: row wrap;
+  row-gap: 15px;
+  column-gap: 50px;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+.skills__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.skills__item__logo {
+  height: 50px;
+  width: 50px;
+}
+
+.comment {
+  font-size: 14px;
+  text-align: right;
 }

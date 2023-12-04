@@ -2,8 +2,9 @@
 
 @mixin body {
   background-image: url("../../../images/gradient.jpg");
-  background-size: cover;
+  // background-size: cover;
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,7 +12,8 @@
 
 @mixin main {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  // align-items: center;
   justify-content: space-between;
   padding: 0 10vw;
 }
@@ -19,6 +21,8 @@
 @mixin header {
   text-align: center;
   margin-top: 30px;
+  height: 10vh;
+  margin-bottom: 10vh;
 
   .logo {
     font-size: 50px;
@@ -31,6 +35,13 @@
     font-weight: 400;
     color: white;
   }
+}
+
+@mixin container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
 }
 
 @mixin navbar {
@@ -61,6 +72,9 @@
 }
 
 @mixin footer {
+  height: 10vh;
+  margin-top: 10vh;
+
   .footer {
     &__copyright {
       text-align: center;
@@ -70,4 +84,9 @@
       color: white;
     }
   }
+}
+
+@mixin page-heading {
+  font-size: 25px;
+  margin-bottom: 30px;
 }

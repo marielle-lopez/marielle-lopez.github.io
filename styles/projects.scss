@@ -1,0 +1,74 @@
+@use "./partials/variables/palette.scss";
+@use "./partials/mixins/layout.scss";
+
+* {
+  font-family: "Azeret Mono", monospace;
+  color: palette.$primary-text-color;
+  margin: 0;
+}
+
+body {
+  @include layout.body;
+}
+
+main {
+  @include layout.main;
+
+  .navbar {
+    @include layout.navbar;
+  }
+}
+
+.container {
+  @include layout.container;
+}
+
+header {
+  @include layout.header;
+}
+
+footer {
+  @include layout.footer;
+}
+
+.page-heading {
+  @include layout.page-heading;
+}
+
+.card {
+  border: 1px solid palette.$primary-text-color;
+  border-radius: 20px;
+  display: flex;
+  margin-bottom: 30px;
+
+  &__image {
+    border-radius: 20px 0 0 20px;
+    width: 300px;
+    object-fit: cover;
+  }
+
+  &__information {
+    padding: 20px;
+
+    &__title {
+      margin-bottom: 10px;
+      font-weight: 800;
+      font-size: 20px;
+    }
+
+    &__subtitle__type {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    &__subtitle__purpose {
+      font-size: 14px;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      font-size: 15px;
+    }
+  }
+}
