@@ -12,8 +12,8 @@
 
 @mixin main {
   display: flex;
-  // align-items: flex-start;
-  align-items: center;
+  align-items: flex-start;
+  // align-items: center;
   justify-content: space-between;
   padding: 0 10vw;
 }
@@ -21,7 +21,8 @@
 @mixin header {
   text-align: center;
   margin-top: 30px;
-  // margin-bottom: 200px;
+  height: 10vh;
+  margin-bottom: 10vh;
 
   .logo {
     font-size: 50px;
@@ -34,6 +35,13 @@
     font-weight: 400;
     color: white;
   }
+}
+
+@mixin container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
 }
 
 @mixin navbar {
@@ -64,6 +72,9 @@
 }
 
 @mixin footer {
+  height: 10vh;
+  margin-top: 10vh;
+
   .footer {
     &__copyright {
       text-align: center;
