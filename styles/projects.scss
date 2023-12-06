@@ -7,27 +7,27 @@
   margin: 0;
 }
 
-body {
+.body {
   @include layout.body;
 }
 
-main {
+.main {
   @include layout.main;
+}
 
-  .navbar {
-    @include layout.navbar;
-  }
+.navbar {
+  @include layout.navbar;
 }
 
 .container {
   @include layout.container;
 }
 
-header {
+.header {
   @include layout.header;
 }
 
-footer {
+.footer {
   @include layout.footer;
 }
 
@@ -56,15 +56,17 @@ footer {
       font-size: 20px;
     }
 
-    &__subtitle__type {
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
+    &__subtitle {
+      &__type {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
 
-    &__subtitle__purpose {
-      font-size: 14px;
-      font-style: italic;
-      margin-bottom: 20px;
+      &__purpose {
+        font-size: 14px;
+        font-style: italic;
+        margin-bottom: 20px;
+      }
     }
 
     &__description {
