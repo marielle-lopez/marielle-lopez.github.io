@@ -22,13 +22,13 @@
   height: 10vh;
   margin-bottom: 10vh;
 
-  .logo {
+  &__logo {
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 10px;
   }
 
-  .breadcrumb {
+  &__breadcrumb {
     font-size: small;
     font-weight: 400;
     color: white;
