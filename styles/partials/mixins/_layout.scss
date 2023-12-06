@@ -134,4 +134,8 @@
 @mixin page-heading {
   font-size: 25px;
   margin-bottom: 30px;
+
+  @include media-queries.phone {
+    margin-top: 20px;
+  }
 }
