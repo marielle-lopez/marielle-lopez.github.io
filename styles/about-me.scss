@@ -7,11 +7,11 @@
   margin: 0;
 }
 
-body {
+.body {
   @include layout.body;
 }
 
-main {
+.main {
   @include layout.main;
 
   .navbar {
@@ -23,11 +23,11 @@ main {
   @include layout.container;
 }
 
-header {
+.header {
   @include layout.header;
 }
 
-footer {
+.footer {
   @include layout.footer;
 }
 
