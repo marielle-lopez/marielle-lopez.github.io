@@ -1,4 +1,5 @@
 @use "../variables/palette.scss";
+@use "./media-queries.scss";
 
 @mixin body {
   background-image: url("../../../images/gradient.jpg");
@@ -7,13 +8,22 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0 10vw;
+
+  @include media-queries.phone {
+    padding: 0 5vw;
+  }
 }
 
 @mixin main {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
-  padding: 0 10vw;
+
+  @include media-queries.phone {
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
+  }
 }
 
 @mixin header {
@@ -33,6 +43,10 @@
     font-weight: 400;
     color: white;
   }
+
+  @include media-queries.phone {
+    margin-bottom: 20px;
+  }
 }
 
 @mixin container {
@@ -40,6 +54,14 @@
   flex-direction: column;
   justify-content: center;
   height: 60vh;
+
+  @include media-queries.phone {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @mixin navbar {
@@ -67,6 +89,26 @@
       background-color: white;
     }
   }
+
+  @include media-queries.phone {
+    border: none;
+    margin: 0 0 20px 0;
+    width: 100%;
+
+    &__list {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      font-size: small;
+      padding: 10px;
+    }
+  }
 }
 
 @mixin footer {
@@ -82,6 +124,10 @@
       font-size: 12px;
       color: white;
     }
+  }
+
+  @include media-queries.phone {
+    margin-top: 5vh;
   }
 }
 

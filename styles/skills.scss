@@ -13,6 +13,7 @@
 
 .main {
   @include layout.main;
+  @include media-queries.phone;
 }
 
 .navbar {
