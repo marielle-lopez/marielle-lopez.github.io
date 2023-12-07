@@ -30,6 +30,13 @@
     min-height: 70vh;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .main {
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 60vh;
+  }
+}
 
 .navbar {
   border: 1px solid #1e1e1e;
@@ -72,6 +79,24 @@
     padding: 10px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    border: none;
+    margin: 0 0 20px 0;
+  }
+  .navbar__list {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar__item {
+    font-size: small;
+    padding: 20px 35px;
+  }
+}
 
 .container {
   display: flex;
@@ -85,6 +110,12 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    height: 100%;
     align-items: center;
   }
 }
@@ -108,6 +139,7 @@
 @media only screen and (max-width: 767px) {
   .header {
     margin-bottom: 20px;
+    height: 100px;
   }
 }
 
@@ -133,12 +165,20 @@
   height: 500px;
   margin-right: 60px;
 }
-@media only screen and (max-width: 767px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .memoji {
     margin: 0;
     max-width: 200px;
     height: auto;
     width: auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .memoji {
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    margin-right: 60px;
   }
 }
 
@@ -162,11 +202,23 @@
     margin-top: 20px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-information__title {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
 .contact-information__item {
   display: flex;
   align-items: center;
 }
 @media only screen and (max-width: 767px) {
+  .contact-information__item {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-information__item {
     font-size: 14px;
   }
@@ -179,5 +231,12 @@
   .contact-information__item__icon {
     height: 25px;
     width: 25px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-information__item__icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
   }
 }
