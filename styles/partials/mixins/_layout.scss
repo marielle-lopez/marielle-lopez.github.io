@@ -169,4 +169,8 @@
   @include media-queries.phone {
     margin-top: 20px;
   }
+
+  @include media-queries.tablet {
+    margin-top: 20px;
+  }
 }

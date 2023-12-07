@@ -51,12 +51,21 @@
     margin-bottom: 50px;
   }
 
+  @include media-queries.tablet {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
   &__item {
     display: flex;
     align-items: center;
     gap: 10px;
 
     @include media-queries.phone {
+      font-size: small;
+    }
+
+    @include media-queries.tablet {
       font-size: small;
     }
 
