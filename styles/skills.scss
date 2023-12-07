@@ -51,12 +51,10 @@
     margin-bottom: 50px;
   }
 
-
   @include media-queries.tablet {
     justify-content: center;
     margin-bottom: 50px;
   }
-
 
   &__item {
     display: flex;
@@ -67,11 +65,13 @@
       font-size: small;
     }
 
-
     @include media-queries.tablet {
       font-size: small;
     }
 
+    @include media-queries.small-laptop {
+      font-size: small;
+    }
 
     &__logo {
       height: 50px;
@@ -80,6 +80,11 @@
       @include media-queries.phone {
         height: 40px;
         width: 40px;
+      }
+
+      @include media-queries.small-laptop {
+        height: 45px;
+        width: 45px;
       }
     }
   }
