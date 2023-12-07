@@ -189,7 +189,7 @@
 .page-heading {
   font-size: 25px;
   margin-bottom: 30px;
-  margin-right: 50%;
+  flex-basis: 100%;
 }
 @media only screen and (max-width: 767px) {
   .page-heading {
@@ -210,11 +210,6 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .page-heading {
-    margin: 0;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1270px) {
   .page-heading {
     margin: 0;
   }
@@ -226,12 +221,13 @@
   display: flex;
   flex-direction: column;
   width: 45%;
-  margin-bottom: 0;
+  margin: 0 30px 30px 0;
 }
 @media only screen and (max-width: 767px) {
   .card {
     flex-direction: column;
     width: 100%;
+    margin: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -239,7 +235,7 @@
     flex-direction: column;
     border-radius: 15px;
     width: 45%;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 .card__image {
@@ -354,6 +350,17 @@
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  justify-content: flex-start;
+}
+@media only screen and (max-width: 767px) {
+  .card-container {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .card-container {
+    justify-content: center;
+    gap: 30px;
+  }
 }

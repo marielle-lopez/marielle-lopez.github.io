@@ -34,7 +34,7 @@
 
 .page-heading {
   @include layout.page-heading;
-  margin-right: 50%;
+  flex-basis: 100%;
 
   @include media-queries.phone {
     text-align: center;
@@ -42,10 +42,6 @@
   }
 
   @include media-queries.tablet {
-    margin: 0;
-  }
-
-  @include media-queries.small-laptop {
     margin: 0;
   }
 }
@@ -56,24 +52,22 @@
   display: flex;
   flex-direction: column;
   width: 45%;
-  margin-bottom: 0;
+  margin: 0 30px 30px 0;
 
   @include media-queries.phone {
     flex-direction: column;
     width: 100%;
+    margin: 0;
   }
 
   @include media-queries.tablet {
     flex-direction: column;
     border-radius: 15px;
     width: 45%;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   &__image {
-    // border-radius: 20px 0 0 20px;
-    // height: 300px;
-    // width: 300px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
     width: auto;
@@ -185,13 +179,15 @@
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  justify-content: flex-start;
 
-  // @include media-queries.tablet {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: center;
-  //   gap: 30px;
-  // }
+  @include media-queries.phone {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @include media-queries.tablet {
+    justify-content: center;
+    gap: 30px;
+  }
 }
