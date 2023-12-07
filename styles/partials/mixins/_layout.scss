@@ -42,7 +42,8 @@
   &__breadcrumb {
     font-size: small;
     font-weight: 400;
-    color: white;
+    color: #fff;
+    text-shadow: #8cb8e8 1px 0 10px;
   }
 
   @include media-queries.phone {
@@ -121,9 +122,10 @@
 
   .footer {
     &__copyright {
-      font-weight: 200;
+      // font-weight: 200;
       font-size: 12px;
-      color: white;
+      color: #fff;
+      text-shadow: #c474ba 1px 0 10px;
     }
   }
 
