@@ -5,7 +5,6 @@
 }
 
 .body {
-  background-image: url("../../../images/gradient.jpg");
   min-height: 100vh;
   max-width: 100vw;
   display: flex;
@@ -239,5 +238,23 @@
 @media only screen and (min-width: 992px) and (max-width: 1270px) {
   .text {
     font-size: small;
+  }
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #bfd9fe, #fcd2f8, #ffc4ca, #dabef4);
+  background-size: 240% 240%;
+  animation: gradient-animation 24s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
