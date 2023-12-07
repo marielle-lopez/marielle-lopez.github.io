@@ -37,6 +37,7 @@
   margin-right: 60px;
 
   @include media-queries.phone {
+
     margin: 0;
     max-width: 200px;
     height: auto;
@@ -48,6 +49,7 @@
     width: auto;
     max-width: 200px;
     margin-right: 60px;
+
   }
 }
 
@@ -73,9 +75,11 @@
       font-size: 14px;
     }
 
+
     @include media-queries.tablet {
       font-size: 14px;
     }
+
 
     &__icon {
       height: 35px;
@@ -86,11 +90,13 @@
         width: 25px;
       }
 
+
       @include media-queries.tablet {
         height: 30px;
         width: 30px;
         margin-right: 20px;
       }
+
     }
   }
 }
