@@ -6,6 +6,10 @@
   font-family: "Azeret Mono", monospace;
   color: palette.$primary-text-color;
   margin: 0;
+
+  @include media-queries.tablet {
+    color: red;
+  }
 }
 
 .body {
@@ -42,12 +46,23 @@
     height: auto;
     width: auto;
   }
+
+  @include media-queries.tablet {
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    margin-right: 60px;
+  }
 }
 
 .introduction {
   @include media-queries.phone {
     margin-top: 20px;
     padding: 0 5vw;
+  }
+
+  @include media-queries.tablet {
+    margin-top: 30px;
   }
 
   &__greeting {
