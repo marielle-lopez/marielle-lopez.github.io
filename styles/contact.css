@@ -21,10 +21,11 @@
 
 .main {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 767px) {
   .main {
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     min-height: 70vh;
