@@ -21,11 +21,12 @@
 
 .main {
   display: flex;
-  justify-content: space-between;
+
+  align-items: flex-start;
 }
 @media only screen and (max-width: 767px) {
   .main {
-    justify-content: flex-start;
+
     flex-direction: column;
     align-items: center;
     min-height: 70vh;
@@ -112,6 +113,11 @@
     margin-bottom: 20px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .header {
+    margin-bottom: 20px;
+  }
+}
 
 .footer {
   display: flex;
@@ -124,6 +130,11 @@
   font-size: 12px;
   color: #fff;
   text-shadow: #c474ba 1px 0 10px;
+}
+@media only screen and (max-width: 767px) {
+  .footer {
+    margin-top: 5vh;
+  }
 }
 @media only screen and (max-width: 767px) {
   .footer {

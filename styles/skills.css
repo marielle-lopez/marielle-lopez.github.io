@@ -21,16 +21,26 @@
 
 .main {
   display: flex;
-  justify-content: space-between;
+
+  align-items: flex-start;
 }
 @media only screen and (max-width: 767px) {
   .main {
-    justify-content: flex-start;
+
     flex-direction: column;
     align-items: center;
     min-height: 70vh;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .main {
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 60vh;
+  }
+}
+
 .navbar {
   border: 1px solid #1e1e1e;
   border-top: none;
@@ -73,6 +83,26 @@
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    border: none;
+    margin: 0 0 20px 0;
+  }
+  .navbar__list {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar__item {
+    font-size: small;
+    padding: 20px 35px;
+  }
+}
+
+
 .container {
   display: flex;
   flex-direction: column;
@@ -88,6 +118,14 @@
     align-items: center;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    height: 100%;
+    align-items: center;
+  }
+}
+
 
 .header {
   text-align: center;
@@ -111,6 +149,12 @@
     margin-bottom: 20px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .header {
+    margin-bottom: 20px;
+    height: 100px;
+  }
+}
 
 .footer {
   display: flex;
@@ -129,6 +173,11 @@
     margin-top: 5vh;
   }
 }
+@media only screen and (max-width: 767px) {
+  .footer {
+    margin-top: 5vh;
+  }
+}
 
 .page-heading {
   font-size: 25px;
@@ -139,6 +188,13 @@
     margin-top: 20px;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .page-heading {
+    margin-top: 20px;
+  }
+}
+
 
 .skills {
   list-style-type: none;
@@ -155,6 +211,14 @@
     margin-bottom: 50px;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .skills {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
 .skills__item {
   display: flex;
   align-items: center;
@@ -165,6 +229,13 @@
     font-size: small;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .skills__item {
+    font-size: small;
+  }
+}
+
 .skills__item__logo {
   height: 50px;
   width: 50px;
