@@ -30,12 +30,20 @@
     flex-direction: column;
     align-items: center;
     min-height: 70vh;
+    width: auto;
   }
 
   @include media-queries.tablet {
     flex-wrap: wrap;
     justify-content: center;
     min-height: 60vh;
+    width: auto;
+    align-content: flex-start;
+    row-gap: 20px;
+  }
+
+  @include media-queries.small-laptop {
+    width: auto;
   }
 }
 
@@ -133,6 +141,7 @@
   @include media-queries.tablet {
     border: none;
     margin: 0 0 20px 0;
+    width: 100%;
 
     &__list {
       text-align: center;
@@ -141,11 +150,12 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      width: 690px;
     }
 
     &__item {
       font-size: small;
-      padding: 20px 35px;
+      padding: 20px 30px;
     }
   }
 
