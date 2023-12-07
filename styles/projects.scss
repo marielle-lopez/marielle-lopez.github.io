@@ -104,6 +104,10 @@
         @include media-queries.tablet {
           font-size: 12px;
         }
+
+        @include media-queries.small-laptop {
+          font-size: 12px;
+        }
       }
 
       &__purpose {
@@ -118,6 +122,10 @@
         @include media-queries.tablet {
           font-size: 12px;
         }
+
+        @include media-queries.small-laptop {
+          font-size: 12px;
+        }
       }
     }
 
@@ -129,6 +137,10 @@
       }
 
       @include media-queries.tablet {
+        font-size: small;
+      }
+
+      @include media-queries.small-laptop {
         font-size: small;
       }
     }
