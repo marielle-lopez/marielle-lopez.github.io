@@ -11,9 +11,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 10vw;
+  padding: 0 5vw;
 }
 @media only screen and (max-width: 767px) {
+  .body {
+    padding: 0 5vw;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .body {
     padding: 0 5vw;
   }
@@ -21,18 +26,16 @@
 
 .main {
   display: flex;
-
-  align-items: flex-start;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 767px) {
   .main {
-
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     min-height: 70vh;
   }
 }
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .main {
     flex-wrap: wrap;
@@ -40,7 +43,6 @@
     min-height: 60vh;
   }
 }
-
 
 .navbar {
   border: 1px solid #1e1e1e;
@@ -83,7 +85,6 @@
     padding: 10px;
   }
 }
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar {
     border: none;
@@ -102,7 +103,11 @@
     padding: 20px 35px;
   }
 }
-
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .navbar {
+    margin-right: 40px;
+  }
+}
 
 .container {
   display: flex;
@@ -119,14 +124,12 @@
     align-items: center;
   }
 }
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .container {
     height: 100%;
     align-items: center;
   }
 }
-
 
 .header {
   text-align: center;
@@ -144,11 +147,6 @@
   font-weight: 400;
   color: #fff;
   text-shadow: #8cb8e8 1px 0 10px;
-}
-@media only screen and (max-width: 767px) {
-  .header {
-    margin-bottom: 20px;
-  }
 }
 @media only screen and (max-width: 767px) {
   .header {
@@ -174,11 +172,6 @@
     margin-top: 5vh;
   }
 }
-@media only screen and (max-width: 767px) {
-  .footer {
-    margin-top: 5vh;
-  }
-}
 
 .dance-image {
   height: 350px;
@@ -192,7 +185,6 @@
     border-radius: 40px;
     width: 100%;
     height: auto;
-
     margin: 10px 0 0 0;
     object-fit: cover;
   }
@@ -202,9 +194,15 @@
     border-radius: 20px;
     width: 60%;
     height: auto;
-
-    margin: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .dance-image {
+    width: 200px;
+    height: 300px;
     object-fit: cover;
+    border-radius: 20px;
+    margin-right: 40px;
   }
 }
 
@@ -215,7 +213,6 @@
 }
 @media only screen and (max-width: 767px) {
   .text {
-
     margin-top: 40px;
     font-size: 14px;
   }
@@ -226,4 +223,8 @@
     margin-top: 40px;
   }
 }
-
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .text {
+    font-size: small;
+  }
+}
