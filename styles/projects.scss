@@ -1,5 +1,6 @@
 @use "./partials/variables/palette.scss";
 @use "./partials/mixins/layout.scss";
+@use "./partials/mixins/media-queries.scss";
 
 * {
   font-family: "Azeret Mono", monospace;
@@ -33,6 +34,10 @@
 
 .page-heading {
   @include layout.page-heading;
+
+  @include media-queries.phone {
+    text-align: center;
+  }
 }
 
 .card {
@@ -41,10 +46,20 @@
   display: flex;
   margin-bottom: 30px;
 
+  @include media-queries.phone {
+    flex-direction: column;
+  }
+
   &__image {
     border-radius: 20px 0 0 20px;
     width: 300px;
     object-fit: cover;
+
+    @include media-queries.phone {
+      width: auto;
+      height: 200px;
+      border-radius: 20px 20px 0 0;
+    }
   }
 
   &__information {
@@ -54,23 +69,39 @@
       margin-bottom: 10px;
       font-weight: 800;
       font-size: 20px;
+
+      @include media-queries.phone {
+        font-size: 16px;
+      }
     }
 
     &__subtitle {
       &__type {
-        font-size: 14px;
         margin-bottom: 10px;
+        font-size: 14px;
+
+        @include media-queries.phone {
+          font-size: 12px;
+        }
       }
 
       &__purpose {
         font-size: 14px;
         font-style: italic;
         margin-bottom: 20px;
+
+        @include media-queries.phone {
+          font-size: 12px;
+        }
       }
     }
 
     &__description {
       font-size: 15px;
+
+      @include media-queries.phone {
+        font-size: small;
+      }
     }
   }
 }

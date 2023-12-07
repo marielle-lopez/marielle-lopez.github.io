@@ -1,5 +1,6 @@
 @use "./partials/variables/palette.scss";
 @use "./partials/mixins/layout.scss";
+@use "./partials/mixins/media-queries.scss";
 
 * {
   font-family: "Azeret Mono", monospace;
@@ -45,14 +46,28 @@
   padding-left: 0;
   margin-bottom: 30px;
 
+  @include media-queries.phone {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
   &__item {
     display: flex;
     align-items: center;
     gap: 10px;
 
+    @include media-queries.phone {
+      font-size: small;
+    }
+
     &__logo {
       height: 50px;
       width: 50px;
+
+      @include media-queries.phone {
+        height: 40px;
+        width: 40px;
+      }
     }
   }
 }
