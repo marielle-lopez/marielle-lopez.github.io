@@ -21,16 +21,26 @@
 
 .main {
   display: flex;
-  justify-content: space-between;
+
+  align-items: flex-start;
 }
 @media only screen and (max-width: 767px) {
   .main {
-    justify-content: flex-start;
+
     flex-direction: column;
     align-items: center;
     min-height: 70vh;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .main {
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 60vh;
+  }
+}
+
 
 .navbar {
   border: 1px solid #1e1e1e;
@@ -74,6 +84,26 @@
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    border: none;
+    margin: 0 0 20px 0;
+  }
+  .navbar__list {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar__item {
+    font-size: small;
+    padding: 20px 35px;
+  }
+}
+
+
 .container {
   display: flex;
   flex-direction: column;
@@ -89,6 +119,14 @@
     align-items: center;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    height: 100%;
+    align-items: center;
+  }
+}
+
 
 .header {
   text-align: center;
@@ -112,6 +150,12 @@
     margin-bottom: 20px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .header {
+    margin-bottom: 20px;
+    height: 100px;
+  }
+}
 
 .footer {
   display: flex;
@@ -124,6 +168,11 @@
   font-size: 12px;
   color: #fff;
   text-shadow: #c474ba 1px 0 10px;
+}
+@media only screen and (max-width: 767px) {
+  .footer {
+    margin-top: 5vh;
+  }
 }
 @media only screen and (max-width: 767px) {
   .footer {
@@ -143,6 +192,17 @@
     border-radius: 40px;
     width: 100%;
     height: auto;
+
+    margin: 10px 0 0 0;
+    object-fit: cover;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .dance-image {
+    border-radius: 20px;
+    width: 60%;
+    height: auto;
+
     margin: 0;
     object-fit: cover;
   }
@@ -155,7 +215,15 @@
 }
 @media only screen and (max-width: 767px) {
   .text {
-    margin-top: 30px;
+
+    margin-top: 40px;
     font-size: 14px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .text {
+    font-size: small;
+    margin-top: 40px;
+  }
+}
+
