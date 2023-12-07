@@ -24,6 +24,12 @@
     align-items: center;
     min-height: 70vh;
   }
+
+  @include media-queries.tablet {
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 60vh;
+  }
 }
 
 @mixin header {
@@ -46,6 +52,7 @@
 
   @include media-queries.phone {
     margin-bottom: 20px;
+    height: 100px;
   }
 }
 
@@ -60,6 +67,11 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  @include media-queries.tablet {
+    height: 100%;
     align-items: center;
   }
 }
@@ -107,6 +119,25 @@
     &__item {
       font-size: small;
       padding: 10px;
+    }
+  }
+
+  @include media-queries.tablet {
+    border: none;
+    margin: 0 0 20px 0;
+
+    &__list {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      font-size: small;
+      padding: 20px 35px;
     }
   }
 }
