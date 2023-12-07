@@ -34,20 +34,33 @@
 
 .page-heading {
   @include layout.page-heading;
+  margin-right: 50%;
 
   @include media-queries.phone {
     text-align: center;
+    margin: 0;
+  }
+
+  @include media-queries.tablet {
+    margin: 0;
+  }
+
+  @include media-queries.small-laptop {
+    margin: 0;
   }
 }
 
 .card {
   border: 1px solid palette.$primary-text-color;
-  border-radius: 20px;
+  border-radius: 15px;
   display: flex;
-  margin-bottom: 30px;
+  flex-direction: column;
+  width: 45%;
+  margin-bottom: 0;
 
   @include media-queries.phone {
     flex-direction: column;
+    width: 100%;
   }
 
   @include media-queries.tablet {
@@ -58,14 +71,18 @@
   }
 
   &__image {
-    border-radius: 20px 0 0 20px;
-    width: 300px;
+    // border-radius: 20px 0 0 20px;
+    // height: 300px;
+    // width: 300px;
     object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: auto;
+    height: 200px;
 
     @include media-queries.phone {
       width: auto;
       height: 200px;
-      border-radius: 20px 20px 0 0;
+      border-radius: 15px 15px 0 0;
     }
 
     @include media-queries.tablet {
@@ -166,10 +183,15 @@
 }
 
 .card-container {
-  @include media-queries.tablet {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
+  // @include media-queries.tablet {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   gap: 30px;
+  // }
 }
