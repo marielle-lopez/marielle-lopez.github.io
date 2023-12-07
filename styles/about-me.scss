@@ -1,5 +1,6 @@
 @use "./partials/variables/palette.scss";
 @use "./partials/mixins/layout.scss";
+@use "./partials/mixins/media-queries.scss";
 
 * {
   font-family: "Azeret Mono", monospace;
@@ -13,10 +14,10 @@
 
 .main {
   @include layout.main;
+}
 
-  .navbar {
-    @include layout.navbar;
-  }
+.navbar {
+  @include layout.navbar;
 }
 
 .container {
@@ -37,10 +38,23 @@
   object-fit: cover;
   border-radius: 100%;
   margin-right: 60px;
+
+  @include media-queries.phone {
+    border-radius: 40px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    object-fit: cover;
+  }
 }
 
 .text {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @include media-queries.phone {
+    margin-top: 30px;
+    font-size: 14px;
+  }
 }
