@@ -3,11 +3,6 @@
   color: #1e1e1e;
   margin: 0;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  * {
-    color: red;
-  }
-}
 
 .body {
   background-image: url("../../../images/gradient.jpg");
