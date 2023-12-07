@@ -47,7 +47,13 @@
     height: auto;
     width: auto;
     max-width: 200px;
-    margin-right: 60px;
+  }
+
+  @include media-queries.small-laptop {
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    margin-right: 30px;
   }
 }
 
@@ -68,6 +74,10 @@
     @include media-queries.phone {
       font-size: medium;
     }
+
+    @include media-queries.small-laptop {
+      font-size: large;
+    }
   }
 
   &__name {
@@ -76,6 +86,10 @@
     margin: 10px 0 30px 0;
 
     @include media-queries.phone {
+      font-size: 60px;
+    }
+
+    @include media-queries.small-laptop {
       font-size: 60px;
     }
   }

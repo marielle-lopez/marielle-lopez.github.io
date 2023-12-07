@@ -8,9 +8,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 10vw;
+  padding: 0 5vw;
 
   @include media-queries.phone {
+    padding: 0 5vw;
+  }
+
+  @include media-queries.small-laptop {
     padding: 0 5vw;
   }
 }
@@ -142,6 +146,10 @@
       padding: 20px 35px;
     }
   }
+
+  @include media-queries.small-laptop {
+    margin-right: 40px;
+  }
 }
 
 @mixin footer {
@@ -173,11 +181,9 @@
     margin-top: 20px;
   }
 
-
   @include media-queries.tablet {
     margin-top: 20px;
     width: 100%;
     text-align: center;
   }
-
 }
