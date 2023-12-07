@@ -43,6 +43,14 @@
     border-radius: 40px;
     width: 100%;
     height: auto;
+    margin: 10px 0 0 0;
+    object-fit: cover;
+  }
+
+  @include media-queries.tablet {
+    border-radius: 20px;
+    width: 60%;
+    height: auto;
     margin: 0;
     object-fit: cover;
   }
@@ -54,7 +62,12 @@
   gap: 20px;
 
   @include media-queries.phone {
-    margin-top: 30px;
+    margin-top: 40px;
     font-size: 14px;
+  }
+
+  @include media-queries.tablet {
+    font-size: small;
+    margin-top: 40px;
   }
 }
