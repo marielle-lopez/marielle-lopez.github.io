@@ -31,6 +31,13 @@
     min-height: 70vh;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .main {
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 60vh;
+  }
+}
 
 .navbar {
   border: 1px solid #1e1e1e;
@@ -73,6 +80,24 @@
     padding: 10px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    border: none;
+    margin: 0 0 20px 0;
+  }
+  .navbar__list {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar__item {
+    font-size: small;
+    padding: 20px 35px;
+  }
+}
 
 .container {
   display: flex;
@@ -87,6 +112,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    height: 100%;
+    justify-content: flex-end;
   }
 }
 
@@ -110,6 +141,7 @@
 @media only screen and (max-width: 767px) {
   .header {
     margin-bottom: 20px;
+    height: 100px;
   }
 }
 
@@ -143,11 +175,24 @@
     width: auto;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .memoji {
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    margin-right: 60px;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   .introduction {
     margin-top: 20px;
     padding: 0 5vw;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .introduction {
+    margin-top: 30px;
   }
 }
 .introduction__greeting {
