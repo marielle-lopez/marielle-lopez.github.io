@@ -1,5 +1,6 @@
 @use "./partials/variables/palette.scss";
 @use "./partials/mixins/layout.scss";
+@use "./partials/mixins/media-queries.scss";
 
 * {
   font-family: "Azeret Mono", monospace;
@@ -34,22 +35,46 @@
 .memoji {
   height: 500px;
   margin-right: 60px;
+
+  @include media-queries.phone {
+    margin: 0;
+    max-width: 200px;
+    height: auto;
+    width: auto;
+  }
 }
 
 .introduction {
+  @include media-queries.phone {
+    margin-top: 20px;
+    padding: 0 5vw;
+  }
+
   &__greeting {
     font-size: 24px;
     margin: 0;
+
+    @include media-queries.phone {
+      font-size: medium;
+    }
   }
 
   &__name {
     font-weight: 700;
     font-size: 70px;
     margin: 10px 0 30px 0;
+
+    @include media-queries.phone {
+      font-size: 60px;
+    }
   }
 
   &__role {
     margin: 0;
     font-weight: 200;
+
+    @include media-queries.phone {
+      font-size: 14px;
+    }
   }
 }
