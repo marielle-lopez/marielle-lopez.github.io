@@ -259,6 +259,10 @@
 }
 .card__information {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 .card__information__title {
   margin-bottom: 10px;
