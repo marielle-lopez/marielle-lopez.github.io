@@ -1,6 +1,4 @@
 function setCopyrightInformation() {
-  console.log("Hi, I'm being called!");
-
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
 
